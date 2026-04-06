@@ -41,6 +41,9 @@
 - Title of city with a catchy phrase
 - A Gallery of images (you can use a Carousel) for the city.
 - A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+- Top Attraction of the city.
+- A briefe history / timeline of the city.
+- Major events in the city.
 
 #### "city/Abha/"
 - Title of city with a catchy phrase.
@@ -48,6 +51,9 @@
 - A brief about the city.
 - A Gallery of images (you can use a Carousel) for the city.
 - A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+- Top Attraction of the city.
+- A briefe history / timeline of the city.
+- Major events in the city.
 
 #### "city/Mekkah/"
 - Title of city with a catchy phrase.
@@ -55,6 +61,9 @@
 - A brief about the city.
 - A Gallery of images (you can use a Carousel) for the city.
 - A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+- Top Attraction of the city.
+- A briefe history / timeline of the city.
+- Major events in the city.
 
 #### "city/AlUla/"
 - Title of city with a catchy phrase.
@@ -62,3 +71,6 @@
 - A brief about the city.
 - A Gallery of images (you can use a Carousel) for the city.
 - A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+- Top Attraction of the city.
+- A briefe history / timeline of the city.
+- Major events in the city.
