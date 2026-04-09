@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+
+    <!--nav start-->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <!--Logo-->
+            <div class="logo">
+                <a href="{% url 'main:home_view' %}">SAF</a>
+            </div>
+
+            <!-- Links -->
+            <ul class="nav-links">
+                <li><a href="{% url 'main:home_view' %}">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Armed Forces</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'main:land_forces_view' %}">Land Forces</a></li>
+                        <li><a href="{% url 'main:air_forces_view' %}">Air Force</a></li>
+                        <li><a href="{% url 'main:naval_forces_view' %}">Naval Forces</a></li>
+                        <li><a href="{% url 'main:air_defense_forces_view' %}">Air Defense</a></li>
+                        <li><a href="{% url 'main:strategic_missile_force_view' %}">Missile Force</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{% url 'main:military_system_view' %}">Military System</a></li>
+                <li><a href="{% url 'main:heroes_view' %}">Heroes</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <!--nav end-->
+
+
+    <!-- Start Main Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <!-- End Main Content -->
+
+
+    <!--footer start-->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Left -->
+            <div class="footer-left">
+                <h3>Saudi Armed Forces</h3>
+                <p>
+                    Strength, discipline, and protection of the Kingdom.
+                    A modern presentation of the Saudi Armed Forces.
+                </p>
+            </div>
+
+            <!-- Right -->
+            <div class="footer-right">
+                <div class="socials">
+                    <a href="https://x.com/modgovksa"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/modgovksa/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/modgovksa"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/modgovksa/"> <i class="fa-brands fa-facebook"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--back to top btn-->
+        <div class="back-to-top" onclick="scrollToTop()">
+            ↑
+        </div>
+
+    </footer>
+    <!--footer end-->
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+
+</html>

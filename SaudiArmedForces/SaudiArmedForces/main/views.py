@@ -1,0 +1,36 @@
+from django.shortcuts import render
+from django.http import HttpRequest, HttpResponse
+
+# Create your views here.
+
+def home_view(request : HttpRequest):
+    return render(request,"main/home.html")
+
+
+def land_forces_view(request : HttpRequest):
+    return render(request,"main/land_forces.html")
+
+
+def air_forces_view(request : HttpRequest):
+    return render(request,"main/air_forces.html")
+
+
+def naval_forces_view(request : HttpRequest):
+    return render(request,"main/naval_forces.html")
+
+
+def air_defense_forces_view(request : HttpRequest):
+    return render(request,"main/air_defense_forces.html")
+
+
+def strategic_missile_force_view(request : HttpRequest):
+    return render(request,"main/strategic_missile_force.html")
+
+
+def military_system_view(request : HttpRequest):
+    return render(request,"main/military_system.html")
+
+
+def heroes_view(request : HttpRequest):
+    return render(request,"main/heroes.html")
+

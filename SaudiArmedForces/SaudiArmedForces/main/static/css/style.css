@@ -1,0 +1,266 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+main,
+section {
+    background-color: white !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+/* ======================================================================================================================== */
+/* ===== Navbar ===== */
+.navbar {
+    width: 100%;
+    background: #F6F8F9;
+    border-bottom: 1px solid #e6e6e6;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ===== Logo ===== */
+.logo a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #29504D;
+    letter-spacing: 1px;
+}
+
+.logo a:hover {
+    color: #30B178;
+}
+
+/* ===== Links ===== */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+.nav-links,
+.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* hover line effect  */
+.nav-links a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #30B178;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #30B178;
+}
+
+/* ===== Dropdown ===== */
+.dropdown-menu {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    background: #F6F8F9;
+    width: 220px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+/* items */
+.dropdown-menu li {
+    padding: 12px 18px;
+}
+
+.dropdown-menu li a {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* hover item */
+.dropdown-menu li:hover {
+    background: #f5f5f5;
+}
+
+/* show dropdown */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .dropdown-menu {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+
+/* =====footer start===== */
+.footer {
+    background: #29504D;
+    color: #ddd;
+    padding: 40px 20px 70px;
+    position: relative;
+}
+
+/* layout */
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* left */
+.footer-left h3 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #bbb;
+    max-width: 400px;
+}
+
+/* right (icons) */
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-right .socials a i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+
+.socials i:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* ===== Back to Top Button ===== */
+.back-to-top {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    background: #aaa;
+    color: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+}
+
+/* end footer */
+/* ========================================================================================================================*/
