@@ -1,0 +1,369 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Royal Saudi Strategic Missile Force {% endblock %}
+
+{% block content %}
+<div class="missile-page">
+
+    <!-- hero -->
+    <header class="missile-hero">
+        <video autoplay muted loop playsinline class="missile-hero-video">
+            <source src="{% static 'videos/missile-video.mp4' %}" type="video/mp4">
+        </video>
+
+        <div class="missile-hero-content">
+            <span class="missile-section-badge">Strategic Missile Force</span>
+            <h1>Royal Saudi Strategic Missile Force</h1>
+            <p>
+                The Royal Saudi Strategic Missile Force is responsible for protecting the Kingdom
+                through advanced missile systems and ensuring strategic deterrence.
+            </p>
+            <a href="#mission" class="missile-hero-btn">Explore More</a>
+        </div>
+    </header>
+
+    <!-- overview -->
+    <section class="missile-overview-section">
+        <div class="missile-overview-container">
+
+            <div class="missile-overview-header">
+                <span class="missile-section-badge">Overview</span>
+                <h2>Strategic Missile Force</h2>
+            </div>
+
+            <p class="missile-overview-text">
+                Known as the “Saqr Project”, named in honor of the founding King Abdulaziz – may he rest in peace –
+                the force marked a major turning point in the Kingdom’s defense strategy after its completion.
+            </p>
+
+            <p class="missile-overview-text">
+                The force operates advanced missile systems and launch platforms to ensure rapid response,
+                high readiness, and effective strategic deterrence. It works alongside other branches of the Armed Forces
+                to strengthen peace, prevent aggression, and protect the nation from potential threats.
+            </p>
+
+            <p class="missile-overview-text">
+                Through continuous modernization, training, and development, the Strategic Missile Force continues
+                to enhance its capabilities in achieving national and regional security and stability.
+            </p>
+
+            <div class="missile-overview-image">
+                <img src="{% static 'images/missile.jpg' %}">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- leadership -->
+    <section class="missile-content-section">
+        <div class="missile-content-container">
+
+            <div class="missile-content-header">
+                <span class="missile-section-badge">Leadership</span>
+                <h2>Strategic Leadership</h2>
+            </div>
+
+            <div class="missile-leadership-wrapper">
+
+                <div class="missile-content-text">
+                    <ul class="missile-content-list-reset">
+                        <li class="missile-leadership-card">
+                            <strong>Lieutenant General Jarallah bin Mohammed Al-Aluwait</strong>
+                            <span class="missile-leader-bio">
+                                Lieutenant General Jarallah bin Mohammed Al-Aluwait currently serves as the Commander
+                                of the Royal Saudi Strategic Missile Force. He holds a Bachelor's degree in Military Sciences
+                                from King Abdulaziz Military College in Riyadh, a Bachelor's degree in Public Administration
+                                from King Abdulaziz University in Jeddah, and a Master's degree in Military Sciences
+                                from the Command and Staff College of the Armed Forces in Riyadh.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="missile-leader-image">
+                    <img src="{% static 'images/missile-leader.jpg' %}">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- mission -->
+    <section class="missile-section" id="mission">
+        <div class="missile-container">
+
+            <div class="missile-text">
+                <span class="missile-section-badge">Mission</span>
+                <h2>Mission & Responsibilities</h2>
+                <p>
+                    Ensuring national security through advanced missile readiness
+                    and strategic deterrence.
+                </p>
+            </div>
+
+            <div class="missile-cards">
+
+                <div class="missile-card">
+                    <h3>Deterrence</h3>
+                    <p>Providing strategic deterrence against threats.</p>
+                </div>
+
+                <div class="missile-card">
+                    <h3>Missile Systems</h3>
+                    <p>Operating advanced missile technologies.</p>
+                </div>
+
+                <div class="missile-card">
+                    <h3>Rapid Response</h3>
+                    <p>Ensuring fast reaction to threats.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- equipment -->
+    <section class="missile-section missile-equipment-section">
+        <div class="missile-container">
+
+            <div class="missile-text missile-center-text">
+                <span class="missile-section-badge">Equipment</span>
+                <h2>Missile Systems</h2>
+            </div>
+
+            <div class="missile-equipment-table">
+
+                <article class="missile-equipment-row missile-reveal">
+                    <div class="missile-equipment-thumb">
+                        <img src="{% static 'images/Missile-Launcher.jpg' %}">
+                    </div>
+                    <div class="missile-equipment-info">
+                        <h3>Missile Launcher</h3>
+                        <p>Strategic launch platform.</p>
+                    </div>
+                    <span class="missile-equipment-type">Launcher</span>
+                </article>
+
+                <article class="missile-equipment-row missile-reveal">
+                    <div class="missile-equipment-thumb">
+                        <img src="{% static 'images/radar.jpg' %}">
+                    </div>
+                    <div class="missile-equipment-info">
+                        <h3>Radar System</h3>
+                        <p>Detection and tracking system.</p>
+                    </div>
+                    <span class="missile-equipment-type">Detection</span>
+                </article>
+
+                <article class="missile-equipment-row missile-reveal">
+                    <div class="missile-equipment-thumb">
+                        <img src="{% static 'images/DF-3-Missile.jpg' %}">
+                    </div>
+                    <div class="missile-equipment-info">
+                        <h3>Command Center</h3>
+                        <p> Long-range ballistic missile used for strategic deterrence and defense operations.
+                        </p>
+                    </div>
+                    <span class="missile-equipment-type">Ballistic Missile</span>
+                </article>
+
+                <article class="missile-equipment-row missile-reveal">
+                    <div class="missile-equipment-thumb">
+                        <img src="{% static 'images/DF-21.jpg' %}">
+                    </div>
+                    <div class="missile-equipment-info">
+                        <h3>DF-21 Missile</h3>
+                        <p>
+                            Medium-range missile system with high precision targeting capabilities.
+                        </p>
+                    </div>
+                    <span class="missile-equipment-type">Precision Strike</span>
+                </article>
+
+                <article class="missile-equipment-row missile-reveal">
+                    <div class="missile-equipment-thumb">
+                        <img src="{% static 'images/Early-Warning-Radar.jpg' %}">
+                    </div>
+                    <div class="missile-equipment-info">
+                        <h3>Early Warning Radar</h3>
+                        <p>
+                            Advanced radar system used for early detection of incoming threats.
+                        </p>
+                    </div>
+                    <span class="missile-equipment-type">Detection System</span>
+                </article>
+
+                <article class="missile-equipment-row missile-reveal">
+                    <div class="missile-equipment-thumb">
+                        <img src="{% static 'images/Missile-Transport-Vehicles.jpg' %}">
+                    </div>
+                    <div class="missile-equipment-info">
+                        <h3>Transport Vehicles</h3>
+                        <p>
+                            Specialized vehicles used to transport and support missile systems safely.
+                        </p>
+                        <span class="missile-equipment-type">Support Unit</span>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- history -->
+    <section class="missile-history-section">
+        <div class="missile-history-container">
+
+            <div class="missile-history-header">
+                <span class="missile-history-badge">History</span>
+                <h2>History of Strategic Missile Force</h2>
+            </div>
+
+            <div class="missile-timeline">
+
+                <div class="missile-timeline-item">
+                    <div class="missile-timeline-dot"></div>
+                    <div class="missile-timeline-card">
+                        <span class="missile-timeline-year">Foundation</span>
+                        <h3>Establishment</h3>
+                        <p>Initial development of missile capabilities.</p>
+                    </div>
+                </div>
+
+                <div class="missile-timeline-item">
+                    <div class="missile-timeline-dot"></div>
+                    <div class="missile-timeline-card">
+                        <span class="missile-timeline-year">Development</span>
+                        <h3>Expansion</h3>
+                        <p>Enhancement of missile systems and readiness.</p>
+                    </div>
+                </div>
+
+                <div class="missile-timeline-item">
+                    <div class="missile-timeline-dot"></div>
+                    <div class="missile-timeline-card">
+                        <span class="missile-timeline-year">Today</span>
+                        <h3>Modern Force</h3>
+                        <p>Advanced strategic defense capabilities.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- vision -->
+    <section class="missile-vision-section">
+        <div class="missile-vision-container">
+
+            <div class="missile-vision-header">
+                <span class="missile-vision-badge">Vision 2030</span>
+                <h2>Future Development</h2>
+            </div>
+
+            <div class="missile-vision-cards">
+
+                <div class="missile-vision-card">
+                    <h3>Technology</h3>
+                    <p>Developing advanced missile systems.</p>
+                </div>
+
+                <div class="missile-vision-card">
+                    <h3>Training</h3>
+                    <p>Enhancing personnel readiness.</p>
+                </div>
+
+                <div class="missile-vision-card">
+                    <h3>Growth</h3>
+                    <p>Strengthening strategic capabilities.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- achievements -->
+    <section class="missile-achievements-section">
+        <div class="missile-achievements-container">
+
+            <div class="missile-achievements-header">
+                <span class="missile-achievements-badge">Achievements</span>
+                <h2>Key Achievements</h2>
+            </div>
+
+            <div class="missile-achievements-cards">
+
+                <div class="missile-achievement-card">
+                    <h3>Defense Strength</h3>
+                    <p>Enhancing national security.</p>
+                </div>
+
+                <div class="missile-achievement-card">
+                    <h3>Readiness</h3>
+                    <p>Maintaining operational readiness.</p>
+                </div>
+
+                <div class="missile-achievement-card">
+                    <h3>Modern Systems</h3>
+                    <p>Adopting advanced technologies.</p>
+                </div>
+
+                <div class="missile-achievement-card">
+                    <h3>Strategic Role</h3>
+                    <p>Supporting national stability.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- challenges -->
+    <section class="missile-content-section">
+        <div class="missile-content-container">
+
+            <div class="missile-content-header">
+                <span class="missile-section-badge">Challenges</span>
+                <h2>Strategic Challenges</h2>
+            </div>
+
+            <div class="missile-content-text">
+
+                <p>
+                    Strategic operations require continuous development and readiness.
+                </p>
+
+                <ul class="missile-content-list">
+                    <li>Maintaining readiness</li>
+                    <li>Adapting to threats</li>
+                    <li>Ensuring rapid response</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+<script>
+    const missileReveals = document.querySelectorAll(".missile-reveal");
+
+    function missileRevealOnScroll() {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        missileReveals.forEach((item) => {
+            const itemTop = item.getBoundingClientRect().top;
+
+            if (itemTop < triggerBottom) {
+                item.classList.add("missile-active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", missileRevealOnScroll);
+    window.addEventListener("load", missileRevealOnScroll);
+</script>
+{% endblock %}
