@@ -3311,42 +3311,8 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ************************************************************ air defense page start********************************************************************** */
-/* =========================================================
-   Saudi Air Defense Forces Page
-========================================================= */
+
 
 .air-defense-page .defense-section {
     padding: 100px 20px;
@@ -4290,3 +4256,967 @@ main {
 }
 
 /* ************************************************************ air defense page end********************************************************************** */
+
+
+/* ************************************************************ naval page start ************************************************************ */
+.naval-page {
+    background: #f7fafc;
+}
+
+/* main sections */
+.naval-section {
+    padding: 100px 20px;
+    background:
+        radial-gradient(circle at top, rgba(41, 80, 120, 0.08), transparent 35%),
+        linear-gradient(to bottom, #f8fbfd, #f1f6fa, #ffffff);
+}
+
+.naval-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.naval-text {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+.naval-center-text {
+    text-align: center;
+}
+
+/* badge */
+.naval-section-badge {
+    display: inline-block;
+    color: #2d628d;
+    margin-bottom: 12px;
+    letter-spacing: 1.2px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 999px;
+    background: rgba(45, 98, 141, 0.10);
+    border: 1px solid rgba(45, 98, 141, 0.14);
+}
+
+/* hero */
+.naval-hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.naval-hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.naval-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(rgba(248, 252, 255, 0.60), rgba(244, 248, 252, 0.84)),
+        linear-gradient(to right, rgba(45, 98, 141, 0.08), rgba(255, 255, 255, 0.12));
+}
+
+.naval-hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.naval-hero-content h1 {
+    font-size: clamp(2.4rem, 5vw, 4.3rem);
+    color: #18324b;
+    margin-bottom: 18px;
+    text-shadow: 0 6px 18px rgba(255, 255, 255, 0.35);
+}
+
+.naval-hero-content p {
+    color: #4b6072;
+    max-width: 720px;
+    line-height: 1.9;
+    font-size: 1.05rem;
+}
+
+.naval-hero-btn {
+    margin-top: 24px;
+    padding: 12px 30px;
+    border-radius: 999px;
+    background: linear-gradient(to right, #29504d, #2d628d);
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.35s ease;
+    box-shadow: 0 10px 24px rgba(41, 80, 77, 0.18);
+}
+
+.naval-hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(41, 80, 77, 0.26);
+}
+
+/* overview */
+.naval-overview-section {
+    padding: 110px 20px;
+    background: linear-gradient(to bottom, #ffffff, #f3f8fb);
+}
+
+.naval-overview-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 42px;
+    border-radius: 24px;
+    border: 1px solid rgba(45, 98, 141, 0.14);
+    box-shadow: 0 16px 36px rgba(35, 61, 84, 0.08);
+}
+
+.naval-overview-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.naval-overview-header h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #18324b;
+    margin-bottom: 20px;
+}
+
+.naval-overview-text {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 26px;
+    line-height: 2;
+    font-size: 1.02rem;
+    color: #556979;
+}
+
+.naval-overview-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 4px;
+    height: 80%;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #3b7aa8, transparent);
+}
+
+.naval-overview-image img {
+    width: 100%;
+    border-radius: 22px;
+    display: block;
+    margin-top: 25px;
+    box-shadow: 0 18px 40px rgba(35, 61, 84, 0.12);
+}
+
+/* leadership + challenges shared */
+.naval-content-section {
+    padding: 110px 20px;
+    background: linear-gradient(to bottom, #f9fcfe, #f2f7fa);
+}
+
+.naval-content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.naval-content-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.naval-content-header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #18324b;
+    font-weight: 700;
+}
+
+/* leadership */
+.naval-leadership-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.naval-content-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    flex: 1;
+}
+
+.naval-content-text p {
+    color: #556979;
+    line-height: 1.9;
+    font-size: 1.05rem;
+}
+
+.naval-content-list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.naval-leadership-card {
+    position: relative;
+    padding: 25px 30px 25px 60px;
+    background: linear-gradient(to bottom, #ffffff, #f2f7fa);
+    border-radius: 20px;
+    border: 1px solid rgba(45, 98, 141, 0.18);
+    box-shadow: 0 10px 25px rgba(35, 61, 84, 0.08);
+    color: #455867;
+    line-height: 1.8;
+    transition: 0.3s ease;
+    text-align: left;
+}
+
+.naval-leadership-card::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 30px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #2d628d;
+    box-shadow: 0 0 0 6px rgba(45, 98, 141, 0.12);
+}
+
+.naval-leadership-card strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #214d70;
+    margin-bottom: 6px;
+}
+
+.naval-leader-bio {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #5d7181;
+}
+
+.naval-leadership-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(45, 98, 141, 0.34);
+    box-shadow: 0 16px 30px rgba(35, 61, 84, 0.12);
+}
+
+.naval-leader-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.naval-leader-image img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    border: 3px solid rgba(45, 98, 141, 0.18);
+    box-shadow: 0 15px 35px rgba(35, 61, 84, 0.14);
+    transition: 0.3s ease;
+}
+
+.naval-leader-image img:hover {
+    transform: scale(1.04);
+}
+
+/* mission */
+.naval-text h2 {
+    color: #18324b;
+    font-size: 2.6rem;
+    margin-bottom: 14px;
+}
+
+.naval-text p {
+    color: #556979;
+    line-height: 1.9;
+}
+
+.naval-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.naval-card {
+    padding: 28px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(243, 248, 251, 0.96));
+    border: 1px solid rgba(45, 98, 141, 0.16);
+    transition: 0.35s ease;
+    box-shadow: 0 10px 24px rgba(35, 61, 84, 0.08);
+    backdrop-filter: blur(6px);
+}
+
+.naval-card h3 {
+    color: #29504d;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.naval-card p {
+    color: #556979;
+    line-height: 1.8;
+}
+
+.naval-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(45, 98, 141, 0.32);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(239, 246, 250, 0.98));
+    box-shadow: 0 18px 34px rgba(35, 61, 84, 0.14);
+}
+
+/* structure */
+.naval-structure-section {
+    padding: 110px 20px;
+    background: linear-gradient(to bottom, #f3f8fb, #ffffff);
+}
+
+.naval-structure-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.naval-structure-intro {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 70px;
+}
+
+.naval-structure-badge {
+    display: inline-block;
+    color: #2d628d;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.naval-structure-intro h2 {
+    font-size: 2.9rem;
+    color: #18324b;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.naval-structure-intro p {
+    color: #556979;
+    line-height: 1.9;
+    font-size: 1.02rem;
+}
+
+.naval-structure-layout {
+    position: relative;
+    max-width: 860px;
+    margin: 0 auto;
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.naval-structure-line {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(45, 98, 141, 0.7), rgba(45, 98, 141, 0.12));
+}
+
+.naval-structure-item {
+    position: relative;
+    width: 100%;
+    padding: 38px 34px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(45, 98, 141, 0.16);
+    transition: 0.35s ease;
+    box-shadow: 0 10px 22px rgba(35, 61, 84, 0.06);
+}
+
+.naval-structure-item::before {
+    content: "";
+    position: absolute;
+    left: -56px;
+    top: 34px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #2d628d;
+    box-shadow: 0 0 0 6px rgba(45, 98, 141, 0.12);
+}
+
+.naval-structure-item:hover {
+    transform: translateX(8px);
+    border-color: rgba(45, 98, 141, 0.30);
+    box-shadow: 0 16px 30px rgba(35, 61, 84, 0.12);
+}
+
+.naval-structure-item h3 {
+    color: #214d70;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.naval-structure-item p {
+    color: #556979;
+    line-height: 1.85;
+}
+
+/* equipment */
+.naval-equipment-section {
+    background:
+        radial-gradient(circle at center, rgba(41, 80, 120, 0.08), transparent 35%),
+        linear-gradient(to bottom, #ffffff, #f3f8fb);
+}
+
+.naval-equipment-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.naval-equipment-row {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(45, 98, 141, 0.15);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: 0.35s ease;
+    box-shadow: 0 10px 30px rgba(35, 61, 84, 0.12);
+    display: block;
+}
+
+.naval-equipment-row:hover {
+    transform: translateY(-8px);
+    border-color: rgba(45, 98, 141, 0.35);
+    box-shadow: 0 18px 35px rgba(35, 61, 84, 0.18);
+}
+
+.naval-equipment-thumb {
+    height: 240px;
+    overflow: hidden;
+}
+
+.naval-equipment-thumb img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.naval-equipment-row:hover .naval-equipment-thumb img {
+    transform: scale(1.06);
+}
+
+.naval-equipment-info {
+    padding: 24px;
+    text-align: center;
+}
+
+.naval-equipment-info h3 {
+    color: #18324b;
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.naval-equipment-info p {
+    color: #556979;
+    line-height: 1.8;
+    font-size: 0.97rem;
+}
+
+.naval-equipment-type {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(45, 98, 141, 0.12);
+    color: #2d628d;
+    border: 1px solid rgba(45, 98, 141, 0.22);
+    font-size: 0.88rem;
+}
+
+/* reveal */
+.naval-reveal {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.naval-reveal.naval-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* history */
+.naval-history-section {
+    padding: 110px 20px;
+    background: radial-gradient(circle at center, #f3f8fb 0%, #fafdff 45%, #ffffff 100%);
+    overflow: hidden;
+}
+
+.naval-history-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.naval-history-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.naval-history-badge {
+    display: inline-block;
+    color: #2d628d;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.naval-history-badge::before,
+.naval-history-badge::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 90px;
+    height: 1px;
+    background: rgba(45, 98, 141, 0.35);
+}
+
+.naval-history-badge::before {
+    right: 100%;
+    margin-right: 18px;
+}
+
+.naval-history-badge::after {
+    left: 100%;
+    margin-left: 18px;
+}
+
+.naval-history-header h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    color: #18324b;
+    line-height: 1.2;
+}
+
+.naval-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 90px;
+}
+
+.naval-timeline::before {
+    content: "";
+    position: absolute;
+    left: 28px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(45, 98, 141, 0.75), rgba(45, 98, 141, 0.12));
+    box-shadow: 0 0 18px rgba(45, 98, 141, 0.10);
+}
+
+.naval-timeline-item {
+    position: relative;
+    margin-bottom: 58px;
+}
+
+.naval-timeline-dot {
+    position: absolute;
+    left: -74px;
+    top: 34px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #7ba7c9;
+    border: 4px solid #2d628d;
+    box-shadow:
+        0 0 0 8px rgba(45, 98, 141, 0.10),
+        0 0 24px rgba(45, 98, 141, 0.14);
+    z-index: 2;
+}
+
+.naval-timeline-card {
+    position: relative;
+    padding: 34px 32px 30px;
+    border-radius: 28px;
+    border: 1px solid rgba(45, 98, 141, 0.18);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(243, 248, 251, 0.95));
+    box-shadow: 0 12px 28px rgba(35, 61, 84, 0.08);
+}
+
+.naval-timeline-card::before {
+    content: "";
+    position: absolute;
+    left: -58px;
+    top: 38px;
+    width: 58px;
+    height: 2px;
+    background: linear-gradient(to right, #2d628d, rgba(45, 98, 141, 0.15));
+}
+
+.naval-timeline-year {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 10px 22px;
+    border-radius: 14px;
+    background: linear-gradient(to bottom, #3c79a7, #29504d);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.naval-timeline-card h3 {
+    font-size: 1.85rem;
+    color: #214d70;
+    margin-bottom: 14px;
+}
+
+.naval-timeline-card p {
+    color: #4f6475;
+    font-size: 1.04rem;
+    line-height: 1.9;
+}
+
+/* vision */
+.naval-vision-section {
+    padding: 110px 20px;
+    background: linear-gradient(to bottom, #ffffff, #f2f7fa);
+}
+
+.naval-vision-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.naval-vision-header {
+    max-width: 760px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.naval-vision-badge {
+    display: inline-block;
+    color: #2d628d;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.naval-vision-header h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #18324b;
+    margin-bottom: 18px;
+}
+
+.naval-vision-header p {
+    color: #556979;
+    line-height: 1.9;
+    font-size: 1.05rem;
+}
+
+.naval-vision-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.naval-vision-card {
+    padding: 30px 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(45, 98, 141, 0.14);
+    box-shadow: 0 10px 25px rgba(35, 61, 84, 0.07);
+    transition: 0.35s ease;
+}
+
+.naval-vision-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(45, 98, 141, 0.28);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 18px 34px rgba(35, 61, 84, 0.12);
+}
+
+.naval-vision-card h3 {
+    color: #214d70;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.naval-vision-card p {
+    color: #556979;
+    line-height: 1.8;
+}
+
+/* achievements */
+.naval-achievements-section {
+    padding: 110px 20px;
+    background: linear-gradient(to bottom, #f3f8fb, #ffffff);
+}
+
+.naval-achievements-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.naval-achievements-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 60px;
+}
+
+.naval-achievements-badge {
+    color: #2d628d;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.naval-achievements-header h2 {
+    font-size: 2.8rem;
+    color: #18324b;
+    margin-bottom: 15px;
+}
+
+.naval-achievements-header p {
+    color: #556979;
+    line-height: 1.8;
+}
+
+.naval-achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.naval-achievement-card {
+    padding: 30px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(45, 98, 141, 0.14);
+    transition: 0.35s ease;
+    box-shadow: 0 10px 24px rgba(35, 61, 84, 0.07);
+}
+
+.naval-achievement-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(45, 98, 141, 0.28);
+    box-shadow: 0 18px 34px rgba(35, 61, 84, 0.12);
+}
+
+.naval-achievement-card h3 {
+    color: #214d70;
+    margin-bottom: 12px;
+}
+
+.naval-achievement-card p {
+    color: #556979;
+    line-height: 1.8;
+}
+
+/* challenges */
+.naval-content-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.naval-content-list li {
+    position: relative;
+    padding: 15px 20px 15px 45px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(45, 98, 141, 0.14);
+    color: #556979;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 16px rgba(35, 61, 84, 0.05);
+    text-align: left;
+}
+
+.naval-content-list li::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #2d628d;
+    box-shadow: 0 0 0 4px rgba(45, 98, 141, 0.12);
+}
+
+.naval-content-list li:hover {
+    transform: translateY(-4px);
+    border-color: rgba(45, 98, 141, 0.28);
+    box-shadow: 0 12px 24px rgba(35, 61, 84, 0.10);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .naval-vision-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .naval-equipment-row {
+        grid-template-columns: 1fr;
+    }
+
+    .naval-equipment-type {
+        justify-self: start;
+    }
+
+    .naval-equipment-thumb {
+        height: 220px;
+    }
+
+    .naval-achievements-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .naval-overview-section,
+    .naval-section,
+    .naval-structure-section,
+    .naval-history-section,
+    .naval-vision-section,
+    .naval-achievements-section,
+    .naval-content-section {
+        padding: 90px 16px;
+    }
+
+    .naval-overview-container {
+        padding: 28px 20px;
+    }
+
+    .naval-hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .naval-overview-header h2,
+    .naval-text h2,
+    .naval-structure-intro h2,
+    .naval-achievements-header h2,
+    .naval-content-header h2 {
+        font-size: 2.1rem;
+    }
+
+    .naval-leadership-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .naval-leader-image {
+        justify-content: center;
+    }
+
+    .naval-leader-image img {
+        width: 260px;
+    }
+
+    .naval-content-text {
+        text-align: center;
+    }
+
+    .naval-leadership-card {
+        padding: 20px 20px 20px 45px;
+    }
+
+    .naval-leadership-card::before {
+        left: 15px;
+        top: 25px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .naval-structure-layout {
+        padding-left: 45px;
+    }
+
+    .naval-structure-line {
+        left: 14px;
+    }
+
+    .naval-structure-item::before {
+        left: -38px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .naval-history-badge::before,
+    .naval-history-badge::after {
+        width: 45px;
+    }
+
+    .naval-timeline {
+        padding-left: 54px;
+    }
+
+    .naval-timeline::before {
+        left: 14px;
+    }
+
+    .naval-timeline-dot {
+        left: -44px;
+        width: 18px;
+        height: 18px;
+        top: 28px;
+    }
+
+    .naval-timeline-card {
+        padding: 24px 20px 22px;
+        border-radius: 22px;
+    }
+
+    .naval-timeline-card::before {
+        left: -34px;
+        width: 34px;
+        top: 32px;
+    }
+
+    .naval-timeline-year {
+        font-size: 1rem;
+        padding: 8px 14px;
+    }
+
+    .naval-timeline-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .naval-timeline-card p,
+    .naval-overview-text,
+    .naval-vision-header p,
+    .naval-achievement-card p {
+        font-size: 0.96rem;
+    }
+}
+
+/* ************************************************************ naval page end********************************************************************** */

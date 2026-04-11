@@ -1,0 +1,389 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Royal Saudi Naval Forces {% endblock %}
+{% block content %}
+<div class="naval-page">
+    <!-- hero -->
+    <header class="naval-hero">
+        <video autoplay muted loop playsinline class="naval-hero-video">
+            <source src="{% static 'videos/naval-video.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="naval-hero-content">
+            <span class="naval-section-badge">Naval Forces</span>
+            <h1>Royal Saudi Naval Forces</h1>
+            <p>
+                The Royal Saudi Naval Forces safeguard the Kingdom’s maritime borders,
+                protect strategic sea lanes, and strengthen national security through
+                advanced fleets, coastal defense systems, and highly trained personnel.
+            </p>
+            <a href="#mission" class="naval-hero-btn">Explore More</a>
+        </div>
+    </header>
+    <!-- overview -->
+    <section class="naval-overview-section">
+        <div class="naval-overview-container">
+            <div class="naval-overview-header">
+                <span class="naval-section-badge">Overview</span>
+                <h2>Royal Saudi Naval Forces</h2>
+            </div>
+            <p class="naval-overview-text">
+                The Royal Saudi Naval Forces are one of the main branches of the Saudi Armed Forces,
+                responsible for defending the security and safety of the Kingdom of Saudi Arabia,
+                its territory, and its territorial waters, while protecting the Kingdom’s maritime
+                interests and securing its coastlines.
+            </p>
+            <p class="naval-overview-text">
+                The Naval Forces operate two major fleets: the Eastern Fleet in the Arabian Gulf
+                and the Western Fleet in the Red Sea. Each fleet is supported by an integrated
+                military structure that includes combat ship units, administrative and technical
+                support units, naval aviation groups, marine forces, and special maritime security units.
+            </p>
+            <p> Through advanced warships, patrol vessels, surveillance systems, and naval bases,
+                the Royal Saudi Naval Forces monitor maritime activity, defend territorial waters,
+                and support joint operations with the other branches of the armed forces.
+            </p>
+            <p class="naval-overview-text">
+                Through modernization, continuous training, and strategic development, the Naval Forces
+                continue to strengthen their capabilities in protecting ports, coastal facilities,
+                and key sea routes that are vital to the Kingdom’s stability, security, and economy.
+            </p>
+            <div class="naval-overview-image">
+                <img src="{% static 'images/naval-image.png' %}" alt="Royal Saudi Naval Forces">
+            </div>
+        </div>
+    </section>
+    <!-- leadership -->
+    <section class="naval-content-section">
+        <div class="naval-content-container">
+            <div class="naval-content-header">
+                <span class="naval-section-badge">Leadership</span>
+                <h2>Naval Leadership</h2>
+            </div>
+            <div class="naval-leadership-wrapper">
+                <div class="naval-content-text">
+                    <ul class="naval-content-list-reset">
+                        <li class="naval-leadership-card">
+                            <strong>Lieutenant General Mohammed bin Abdulrahman Al-Ghuraybi</strong>
+                            <span class="naval-leader-bio">
+                                He earned a Bachelor’s degree in Military Sciences from King Fahd Naval Academy in Jubail in 1988, a Master’s degree in Military Sciences from the Naval War College in the Islamic Republic of Pakistan in 2005, and a Master’s degree in Strategic Studies from the Command and Staff College in Riyadh in 2013.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="naval-leader-image">
+                    <img src="{% static 'images/naval-leader.png' %}" alt="Naval Leadership">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mission -->
+    <section class="naval-section" id="mission">
+        <div class="naval-container">
+            <div class="naval-text">
+                <span class="naval-section-badge">Mission</span>
+                <h2>Mission & Responsibilities</h2>
+                <p>
+                    The Royal Saudi Naval Forces are committed to defending the Kingdom’s maritime domain,
+                    maintaining naval readiness, and protecting sea routes, coastal areas, and strategic
+                    maritime facilities.
+                </p>
+            </div>
+            <div class="naval-cards">
+                <div class="naval-card">
+                    <h3>Maritime Security</h3>
+                    <p>Protecting territorial waters and ensuring the security of maritime borders.</p>
+                </div>
+                <div class="naval-card">
+                    <h3>Coastal Defense</h3>
+                    <p>Defending coastal regions, ports, and critical shore-based facilities.</p>
+                </div>
+                <div class="naval-card">
+                    <h3>Fleet Readiness</h3>
+                    <p>Maintaining a high level of operational preparedness across naval units.</p>
+                </div>
+                <div class="naval-card">
+                    <h3>Joint Operations</h3>
+                    <p>Supporting integrated missions with the other branches of the armed forces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- structure -->
+    <section class="naval-structure-section">
+        <div class="naval-structure-container">
+            <div class="naval-structure-intro">
+                <span class="naval-structure-badge">Organization & Structure</span>
+                <h2>Naval Structure</h2>
+                <p>
+                    The Royal Saudi Naval Forces operate through an organized structure of fleet commands,
+                    coastal defense units, marine support services, and naval bases that work together
+                    to ensure mission effectiveness and maritime protection.
+                </p>
+            </div>
+            <div class="naval-structure-layout">
+                <div class="naval-structure-line"></div>
+                <div class="naval-structure-item">
+                    <h3>Fleet Units</h3>
+                    <p>
+                        Operational naval fleets equipped with warships and vessels prepared
+                        for patrol, defense, and maritime security missions.
+                    </p>
+                </div>
+                <div class="naval-structure-item">
+                    <h3>Coastal Defense Units</h3>
+                    <p>
+                        Specialized units responsible for protecting coastlines, ports,
+                        and strategic maritime facilities.
+                    </p>
+                </div>
+                <div class="naval-structure-item">
+                    <h3>Support & Logistics</h3>
+                    <p>
+                        Maintenance, supply, transportation, and technical services that
+                        sustain continuous naval operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- equipment -->
+    <section class="naval-section naval-equipment-section" id="equipment">
+        <div class="naval-container">
+            <div class="naval-text naval-center-text">
+                <span class="naval-section-badge">Equipment</span>
+                <h2>Naval Equipment & Capabilities</h2>
+                <p>
+                    The Naval Forces operate advanced maritime platforms designed to support
+                    defense readiness, surveillance, fleet mobility, and sea control.
+                </p>
+            </div>
+            <div class="naval-equipment-table">
+                <article class="naval-equipment-row naval-reveal">
+                    <div class="naval-equipment-thumb">
+                        <img src="{% static 'images/frigate.jpg' %}" alt="Frigate">
+                    </div>
+                    <div class="naval-equipment-info">
+                        <h3>Frigate</h3>
+                        <p>Advanced warship designed for maritime defense, escort missions, and combat operations.</p>
+                    </div>
+                    <span class="naval-equipment-type">Combat Vessel</span>
+                </article>
+                <article class="naval-equipment-row naval-reveal">
+                    <div class="naval-equipment-thumb">
+                        <img src="{% static 'images/patrol-boat.jpg' %}" alt="Patrol Boat">
+                    </div>
+                    <div class="naval-equipment-info">
+                        <h3>Patrol Boat</h3>
+                        <p>Fast vessel used for coastal patrol, maritime monitoring, and rapid response missions.</p>
+                    </div>
+                    <span class="naval-equipment-type">Patrol Vessel</span>
+                </article>
+                <article class="naval-equipment-row naval-reveal">
+                    <div class="naval-equipment-thumb">
+                        <img src="{% static 'images/Naval-Radar-System.jpg' %}" alt="Naval Radar">
+                    </div>
+                    <div class="naval-equipment-info">
+                        <h3>Naval Radar System</h3>
+                        <p>Surveillance system used for maritime detection, tracking, and situational awareness.</p>
+                    </div>
+                    <span class="naval-equipment-type">Surveillance System</span>
+                </article>
+                <article class="naval-equipment-row naval-reveal">
+                    <div class="naval-equipment-thumb">
+                        <img src="{% static 'images/Support-Ship.jpg' %}" alt="Support Ship">
+                    </div>
+                    <div class="naval-equipment-info">
+                        <h3>Support Ship</h3>
+                        <p>Naval support vessel used for supply, logistics, and sustaining operations at sea.</p>
+                    </div>
+                    <span class="naval-equipment-type">Support Vessel</span>
+                </article>
+                <article class="naval-equipment-row naval-reveal">
+                    <div class="naval-equipment-thumb">
+                        <img src="{% static 'images/Coastal-Defense-System.jpg' %}" alt="Coastal Defense System">
+                    </div>
+                    <div class="naval-equipment-info">
+                        <h3>Coastal Defense System</h3>
+                        <p>Shore-based defense platform designed to secure coasts and strategic maritime zones.</p>
+                    </div>
+                    <span class="naval-equipment-type">Defense System</span>
+                </article>
+                <article class="naval-equipment-row naval-reveal">
+                    <div class="naval-equipment-thumb">
+                        <img src="{% static 'images/Naval-Helicopter.jpg' %}" alt="Naval Helicopter">
+                    </div>
+                    <div class="naval-equipment-info">
+                        <h3>Naval Helicopter</h3>
+                        <p>Aircraft used for reconnaissance, support missions, and maritime operational coordination.</p>
+                    </div>
+                    <span class="naval-equipment-type">Air Support</span>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- history -->
+    <section class="naval-history-section">
+        <div class="naval-history-container">
+            <div class="naval-history-header">
+                <span class="naval-history-badge">Military History</span>
+                <h2>History of the Royal Saudi Naval Forces</h2>
+            </div>
+            <div class="naval-timeline">
+                <div class="naval-timeline-item">
+                    <div class="naval-timeline-dot"></div>
+                    <div class="naval-timeline-card">
+                        <span class="naval-timeline-year">Foundation</span>
+                        <h3>Early Development</h3>
+                        <p>
+                            The Naval Forces began with the establishment of maritime defense units
+                            to protect the Kingdom’s shores and coastal interests.
+                        </p>
+                    </div>
+                </div>
+                <div class="naval-timeline-item">
+                    <div class="naval-timeline-dot"></div>
+                    <div class="naval-timeline-card">
+                        <span class="naval-timeline-year">Expansion</span>
+                        <h3>Fleet Growth</h3>
+                        <p>
+                            Naval capabilities expanded through the acquisition of more advanced
+                            ships, improved bases, and stronger regional maritime presence.
+                        </p>
+                    </div>
+                </div>
+                <div class="naval-timeline-item">
+                    <div class="naval-timeline-dot"></div>
+                    <div class="naval-timeline-card">
+                        <span class="naval-timeline-year">Modernization</span>
+                        <h3>Modern Naval Development</h3>
+                        <p>
+                            The force entered a modern phase with upgraded fleet systems,
+                            advanced surveillance, and improved combat and support capabilities.
+                        </p>
+                    </div>
+                </div>
+                <div class="naval-timeline-item">
+                    <div class="naval-timeline-dot"></div>
+                    <div class="naval-timeline-card">
+                        <span class="naval-timeline-year">Today</span>
+                        <h3>Current Readiness</h3>
+                        <p>
+                            Today, the Royal Saudi Naval Forces stand as a key maritime shield,
+                            protecting national waters and contributing to regional stability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- vision -->
+    <section class="naval-vision-section">
+        <div class="naval-vision-container">
+            <div class="naval-vision-header">
+                <span class="naval-vision-badge">Development & Vision 2030</span>
+                <h2>Modernization and Maritime Readiness</h2>
+                <p>
+                    Under Saudi Vision 2030, the Naval Forces continue to develop through
+                    modernization, advanced fleet capabilities, operational training, and
+                    stronger maritime defense readiness.
+                </p>
+            </div>
+            <div class="naval-vision-cards">
+                <div class="naval-vision-card">
+                    <h3>Modern Fleet</h3>
+                    <p>
+                        Developing advanced naval platforms and systems that strengthen maritime defense.
+                    </p>
+                </div>
+                <div class="naval-vision-card">
+                    <h3>Training Excellence</h3>
+                    <p>
+                        Enhancing the readiness and professional skills of naval personnel through continuous training.
+                    </p>
+                </div>
+                <div class="naval-vision-card">
+                    <h3>Strategic Capability</h3>
+                    <p>
+                        Expanding maritime capability to protect sea routes, coastal facilities, and national interests.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- achievements -->
+    <section class="naval-achievements-section">
+        <div class="naval-achievements-container">
+            <div class="naval-achievements-header">
+                <span class="naval-achievements-badge">Major Achievements</span>
+                <h2>Key Milestones & Achievements</h2>
+                <p>
+                    The Royal Saudi Naval Forces have achieved important progress through
+                    modernization, maritime readiness, and operational development.
+                </p>
+            </div>
+            <div class="naval-achievements-cards">
+                <div class="naval-achievement-card">
+                    <h3>Maritime Protection</h3>
+                    <p>
+                        Strengthening protection across maritime borders, coastal waters, and strategic ports.
+                    </p>
+                </div>
+                <div class="naval-achievement-card">
+                    <h3>Fleet Development</h3>
+                    <p>
+                        Expanding and modernizing naval platforms to improve operational capability.
+                    </p>
+                </div>
+                <div class="naval-achievement-card">
+                    <h3>Operational Readiness</h3>
+                    <p>
+                        Maintaining high readiness levels across fleet, support, and defense units.
+                    </p>
+                </div>
+                <div class="naval-achievement-card">
+                    <h3>Strategic Support</h3>
+                    <p>
+                        Supporting national maritime security and contributing to regional stability missions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- challenges -->
+    <section class="naval-content-section">
+        <div class="naval-content-container">
+            <div class="naval-content-header">
+                <span class="naval-section-badge">Challenges</span>
+                <h2>Maritime & Strategic Challenges</h2>
+            </div>
+            <div class="naval-content-text">
+                <p>
+                    Naval operations require constant readiness and strategic coordination
+                    due to the wide maritime domain and the importance of securing national waters.
+                </p>
+                <ul class="naval-content-list">
+                    <li>Protecting long coastlines and maritime borders.</li>
+                    <li>Securing major sea lanes and strategic maritime routes.</li>
+                    <li>Maintaining rapid response to evolving maritime threats.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- script -->
+    <script>
+        const navalReveals = document.querySelectorAll(".naval-reveal");
+        function navalRevealOnScroll() {
+            const triggerBottom = window.innerHeight * 0.85;
+            navalReveals.forEach((item) => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < triggerBottom) {
+                    item.classList.add("naval-active");
+                }
+            });
+        }
+        window.addEventListener("scroll", navalRevealOnScroll);
+        window.addEventListener("load", navalRevealOnScroll);
+    </script>
+</div>
+{% endblock %}
