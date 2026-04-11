@@ -1,0 +1,401 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Saudi Air Defense Forces {% endblock %}
+{% block content %}
+<div class="air-defense-page">
+    <!-- hero start -->
+    <header class="defense-hero">
+        <video autoplay muted loop playsinline class="defense-hero-video">
+            <source src="{% static 'videos/air-defence.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="defense-hero-overlay"></div>
+        <div class="defense-hero-content">
+            <span class="section-badge">Air Defense</span>
+            <h1>Royal Saudi Air Defense Forces</h1>
+            <p>
+                The Royal Saudi Air Defense Forces play a vital role in protecting the Kingdom’s airspace
+                through advanced missile systems, radar technologies, and highly prepared defense units.
+            </p>
+            <a href="#mission" class="hero-btn">Discover More</a>
+        </div>
+    </header>
+    <!-- hero end -->
+
+    <!-- overview start -->
+    <section class="overview-section">
+        <div class="overview-container">
+            <div class="overview-header">
+                <span class="section-badge">Overview</span>
+                <h2>Royal Saudi Air Defense Forces</h2>
+            </div>
+            <p class="overview-text">
+                The Royal Saudi Air Defense Forces are one of the main branches of the Saudi Armed Forces,
+                responsible for defending vital areas, sensitive points, and military formations against
+                any aerial or missile threat, while maintaining the safety and security of the Kingdom’s airspace
+                through integrated defense systems.
+            </p>
+            <p class="overview-text">
+                This force relies on advanced missile platforms, radar networks, and command systems to detect,
+                track, and intercept hostile targets with speed and precision. It works in close coordination
+                with the Royal Saudi Air Force and in cooperation with the other branches of the armed forces
+                to protect the stability, security, and resources of the Kingdom of Saudi Arabia.
+            </p>
+            <p class="overview-text">
+                Through modernization, continuous training, and operational development, the Air Defense Forces
+                seek to build and strengthen a modern and effective air defense force capable of rapid response
+                and immediate reaction, protecting the nation, its interests, and its strategic assets from
+                external threats.
+            </p>
+            <div class="overview-image">
+                <img src="{% static 'images/air-defence.jpg' %}" alt="Air Defense Forces">
+            </div>
+        </div>
+    </section>
+    <!-- overview end -->
+
+    <!-- leadership start -->
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-header">
+                <span class="section-badge">Leadership</span>
+                <h2>Military Leadership</h2>
+            </div>
+
+            <div class="leadership-wrapper">
+                <div class="content-text">
+                    <ul>
+                        <li>
+                            <strong>Lieutenant General Muzid bin Suleiman Al-Amro</strong>
+
+                            <span class="leader-bio">
+                                His Excellency Lieutenant General Muzid bin Suleiman Al-Amro currently serves as the Commander of the Royal Saudi Air Defense Forces. He holds a Bachelor’s degree in Military Sciences from King Abdulaziz Military Academy in Riyadh, a Master’s degree in Military Sciences from the Command and Staff College in Riyadh, and is a graduate of the Higher War College at Nasser Military Academy in the Arab Republic of Egypt.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="leader-image">
+                    <img src="{% static 'images/air-defence-leader.png' %}" alt="Air Defense Leadership">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- leadership end -->
+
+    <!-- mission start -->
+    <section class="defense-section" id="mission">
+        <div class="defense-container">
+            <div class="defense-text">
+                <span class="section-badge">Mission</span>
+                <h2>Mission & Responsibilities</h2>
+                <p>
+                    The Royal Saudi Air Defense Forces are committed to protecting the skies of the Kingdom
+                    by detecting threats early, intercepting hostile targets, and maintaining a constant state
+                    of operational readiness.
+                </p>
+            </div>
+            <div class="defense-cards">
+                <div class="defense-card">
+                    <h3>Threat Detection</h3>
+                    <p>Monitoring and identifying aerial threats through advanced radar systems.</p>
+                </div>
+                <div class="defense-card">
+                    <h3>Missile Interception</h3>
+                    <p>Neutralizing hostile missiles and aircraft before they reach vital areas.</p>
+                </div>
+                <div class="defense-card">
+                    <h3>Airspace Security</h3>
+                    <p>Ensuring safe and continuous protection of national airspace.</p>
+                </div>
+                <div class="defense-card">
+                    <h3>Joint Operations</h3>
+                    <p>Supporting integrated defense missions with other branches of the armed forces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mission end -->
+
+    <!-- structure start -->
+    <section class="structure-section">
+        <div class="structure-container">
+            <div class="structure-intro">
+                <span class="structure-badge">Organization & Structure</span>
+                <h2>Air Defense Structure</h2>
+                <p>
+                    The Royal Saudi Air Defense Forces operate through a well-organized system of field units,
+                    command centers, radar stations, and logistical support divisions to ensure rapid response
+                    and mission effectiveness.
+                </p>
+            </div>
+            <div class="structure-layout">
+                <div class="structure-line"></div>
+                <div class="structure-item">
+                    <h3>Radar Units</h3>
+                    <p>
+                        Early warning radar stations monitor the airspace and provide accurate real-time tracking.
+                    </p>
+                </div>
+                <div class="structure-item">
+                    <h3>Missile Batteries</h3>
+                    <p>
+                        Defensive missile systems are deployed strategically to intercept and destroy aerial threats.
+                    </p>
+                </div>
+                <div class="structure-item">
+                    <h3>Command Centers</h3>
+                    <p>
+                        Centralized command and control systems coordinate response, communication, and field operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- structure end -->
+
+    <!-- defense systems start -->
+    <section class="defense-section systems-section" id="systems">
+        <div class="defense-container">
+            <div class="defense-text center-text">
+                <span class="section-badge">Defense Systems</span>
+                <h2>Defense Systems</h2>
+                <p>
+                    The Air Defense Forces operate advanced systems designed to provide early warning,
+                    interception capability, and layered protection for the Kingdom.
+                </p>
+            </div>
+            <div class="equipment-grid">
+                <article class="equipment-card reveal">
+                    <div class="equipment-image">
+                        <img src="{% static 'images/Patriot-System.jpg' %}" alt="Patriot System">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Patriot System</h3>
+                        <p>
+                            A highly advanced air and missile defense system used to intercept incoming threats
+                            and protect strategic locations.
+                        </p>
+                        <span class="equipment-tag">Missile Defense</span>
+                    </div>
+                </article>
+                <article class="equipment-card reveal">
+                    <div class="equipment-image">
+                        <img src="{% static 'images/Radar-Networks.jpg' %}" alt="Radar System">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Radar Networks</h3>
+                        <p>
+                            Integrated radar systems provide continuous surveillance and early detection
+                            of hostile aircraft and missiles.
+                        </p>
+                        <span class="equipment-tag">Early Warning</span>
+                    </div>
+                </article>
+                <article class="equipment-card reveal">
+                    <div class="equipment-image">
+                        <img src="{% static 'images/Command & Control.jpg' %}" alt="Command Center">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Command & Control</h3>
+                        <p>
+                            Modern command systems ensure fast communication, accurate decisions,
+                            and effective coordination across defense units.
+                        </p>
+                        <span class="equipment-tag">Operational Control</span>
+                    </div>
+                </article>
+                <article class="equipment-card reveal">
+                    <div class="equipment-image">
+                        <img src="{% static 'images/Anti-Drone-Defense.jpg' %}" alt="Anti-Drone System">
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Mobile Launchers</h3>
+                        <p>
+                            Specialized system designed to detect, track, and neutralize
+                            unmanned aerial vehicles (UAVs) and drone threats.
+                        </p>
+                        <span class="equipment-tag">Drone Defense</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- defense systems end -->
+
+    <!-- history start -->
+    <section class="history-section">
+        <div class="history-container">
+            <div class="history-header">
+                <span class="history-badge">Military History</span>
+                <h2>History of the Royal Saudi Air Defense Forces</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">Beginning</span>
+                        <h3>Foundation Stage</h3>
+                        <p>
+                            The early development of the Air Defense Forces focused on establishing essential
+                            defensive capabilities and building foundational operational units.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">Development</span>
+                        <h3>System Expansion</h3>
+                        <p>
+                            Defensive systems, field units, and command infrastructure expanded to improve
+                            readiness and national coverage.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">Modern Era</span>
+                        <h3>Modernization</h3>
+                        <p>
+                            Advanced missile technologies, digital radar systems, and integrated command centers
+                            became central to operational defense capabilities.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">Today</span>
+                        <h3>Current Readiness</h3>
+                        <p>
+                            Today, the Air Defense Forces represent a key shield of national defense,
+                            maintaining high readiness against evolving aerial threats.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- history end -->
+
+    <!-- vision start -->
+    <section class="vision-section">
+        <div class="vision-container">
+            <div class="vision-header">
+                <span class="vision-badge">Development & Vision 2030</span>
+                <h2>Modernization and Future Readiness</h2>
+                <p>
+                    Under Saudi Vision 2030, the Air Defense Forces continue to advance through modernization,
+                    digital transformation, training development, and stronger local defense capabilities.
+                </p>
+            </div>
+            <div class="vision-cards">
+                <div class="vision-card">
+                    <h3>Advanced Technology</h3>
+                    <p>
+                        Integrating smart defense solutions, modern radar systems, and updated interception capabilities.
+                    </p>
+                </div>
+                <div class="vision-card">
+                    <h3>Training Excellence</h3>
+                    <p>
+                        Enhancing the expertise of personnel through continuous operational and technical training.
+                    </p>
+                </div>
+                <div class="vision-card">
+                    <h3>National Capability</h3>
+                    <p>
+                        Strengthening local support and defense development in line with strategic national goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- vision end -->
+
+    <!-- achievements start -->
+    <section class="achievements-section">
+        <div class="achievements-container">
+            <div class="achievements-header">
+                <span class="achievements-badge">Major Achievements</span>
+                <h2>Key Milestones & Achievements</h2>
+                <p>
+                    The Royal Saudi Air Defense Forces have achieved important milestones through modernization,
+                    operational readiness, and continuous strategic development.
+                </p>
+            </div>
+            <div class="achievements-cards">
+                <div class="achievement-card">
+                    <h3>Strategic Protection</h3>
+                    <p>
+                        Providing reliable defense coverage for key areas and vital national facilities.
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <h3>Operational Readiness</h3>
+                    <p>
+                        Maintaining rapid-response capabilities and high preparedness across defense units.
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <h3>System Integration</h3>
+                    <p>
+                        Linking radar, missile, and command systems into a coordinated defense network.
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <h3>Continuous Modernization</h3>
+                    <p>
+                        Advancing defense performance through updated systems, infrastructure, and skilled personnel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- achievements end -->
+
+    <!-- challenges start -->
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-header">
+                <span class="section-badge">Challenges</span>
+                <h2>Strategic & Operational Challenges</h2>
+            </div>
+
+            <div class="content-text">
+                <p>
+                    The mission of the Royal Saudi Air Defense Forces requires constant vigilance,
+                    advanced coordination, and rapid response due to the speed and complexity of
+                    modern aerial threats.
+                </p>
+
+                <ul class="content-list">
+                    <li>Monitoring wide airspace and detecting threats in real time.</li>
+                    <li>Protecting major cities, vital facilities, and strategic national sites.</li>
+                    <li>Maintaining integration between radar systems, missile units, and command centers.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- challenges end -->
+
+    <!-- reveal script -->
+    <script>
+        const reveals = document.querySelectorAll(".reveal");
+        function revealOnScroll() {
+            const triggerBottom = window.innerHeight * 0.85;
+            reveals.forEach((item) => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < triggerBottom) {
+                    item.classList.add("active");
+                }
+            });
+        }
+        window.addEventListener("scroll", revealOnScroll);
+        window.addEventListener("load", revealOnScroll);
+    </script>
+    <!-- reveal script -->
+</div>
+{% endblock %}
