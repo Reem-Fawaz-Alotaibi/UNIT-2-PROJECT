@@ -2448,6 +2448,1308 @@ body.dark .closing-content p {
 
 
 /* ************************************************************ air page start********************************************************************** */
+/* ************************************************************ air page start ********************************************************************** */
+
+.air .air-section {
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #f8fbff, #edf4fa);
+}
+
+.air .air-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.air-text {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+}
+
+/* badge */
+.section-badge {
+    display: inline-block;
+    color: #8b6b2e;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* headings */
+.air-text h2 {
+    color: #183247;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: 15px;
+    line-height: 1.25;
+}
+
+.air-text p {
+    color: #4f6475;
+    line-height: 1.8;
+}
+
+/* ===== Hero ===== */
+.air-hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.air-hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.air-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 30, 45, 0.28);
+}
+
+.air-hero-content {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.air-hero-content h1 {
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.15;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.air-hero-content p {
+    color: #f5f7fa;
+    max-width: 700px;
+    line-height: 1.8;
+    font-size: 1rem;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
+}
+
+.hero-btn {
+    margin-top: 20px;
+    padding: 12px 26px;
+    border-radius: 999px;
+    background: #d4af37;
+    color: #183247;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-btn:hover {
+    background: #c39c2d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ===== Overview ===== */
+.overview-section {
+    padding: 110px 20px;
+    background: linear-gradient(to bottom, #f8fbff, #edf4fa);
+}
+
+.overview-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow: 0 10px 30px rgba(24, 50, 71, 0.08);
+}
+
+.overview-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.overview-header h2 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: #183247;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.overview-text {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 24px;
+    line-height: 2;
+    font-size: 1.02rem;
+    color: #506474;
+}
+
+.overview-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    height: 80%;
+    width: 3px;
+    background: linear-gradient(to bottom, #d4af37, transparent);
+    border-radius: 2px;
+}
+
+.overview-image {
+    margin-top: 30px;
+}
+
+.overview-image img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(24, 50, 71, 0.12);
+}
+
+/* ===== Structure ===== */
+.structure-section {
+    padding: 110px 20px;
+    background: linear-gradient(to bottom, #f8fbff, #edf4fa);
+}
+
+.structure-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.structure-intro {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 70px;
+}
+
+.structure-badge {
+    display: inline-block;
+    color: #8b6b2e;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.structure-intro h2 {
+    font-size: clamp(2rem, 4vw, 2.9rem);
+    color: #183247;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.structure-intro p {
+    color: #506474;
+    line-height: 1.9;
+    font-size: 1.02rem;
+}
+
+.structure-layout {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.structure-line {
+    position: absolute;
+    left: 24px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(212, 175, 55, 0.85), rgba(212, 175, 55, 0.18));
+}
+
+.structure-item {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    padding: 32px 28px;
+    position: relative;
+    border-left: 1px solid rgba(212, 175, 55, 0.25);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 30px rgba(24, 50, 71, 0.06);
+    overflow-wrap: break-word;
+}
+
+.structure-item::before {
+    content: "";
+    position: absolute;
+    left: -57px;
+    top: 28px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #d4af37;
+    box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.12);
+}
+
+.structure-item:hover {
+    transform: translateX(8px);
+    background: #ffffff;
+    border-left-color: rgba(212, 175, 55, 0.55);
+}
+
+.structure-item h3 {
+    color: #8b6b2e;
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.structure-item p {
+    color: #506474;
+    line-height: 1.8;
+    font-size: 0.98rem;
+    max-width: 100%;
+}
+
+/* ===== Cards (Mission) ===== */
+.air-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.air-card {
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(24, 50, 71, 0.06);
+}
+
+.air-card h3 {
+    color: #183247;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.air-card p {
+    color: #506474;
+    line-height: 1.7;
+}
+
+.air-card:hover {
+    transform: translateY(-5px);
+    background: #ffffff;
+}
+
+/* ===== Aircraft ===== */
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.equipment-card {
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(24, 50, 71, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: 0.35s ease;
+    box-shadow: 0 10px 30px rgba(24, 50, 71, 0.08);
+    min-width: 0;
+}
+
+.equipment-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(216, 184, 123, 0.45);
+    box-shadow: 0 18px 35px rgba(24, 50, 71, 0.14);
+}
+
+.equipment-image {
+    height: 240px;
+    overflow: hidden;
+}
+
+.equipment-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.equipment-card:hover .equipment-image img {
+    transform: scale(1.06);
+}
+
+.equipment-content {
+    padding: 24px;
+}
+
+.equipment-content h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+    color: #183247;
+    line-height: 1.3;
+}
+
+.equipment-content p {
+    color: #5a6d7d;
+    font-size: 0.97rem;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+.equipment-tag {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(216, 184, 123, 0.14);
+    color: #8b6b2e;
+    border: 1px solid rgba(216, 184, 123, 0.25);
+    font-size: 0.88rem;
+    line-height: 1.4;
+}
+
+/* ===== Reveal Animation ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== History ===== */
+.history-section {
+    padding: 110px 20px;
+    background: radial-gradient(circle at center, #f9fbfe 0%, #eef4f9 48%, #e6eef6 100%);
+    overflow: hidden;
+}
+
+.history-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.history-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.history-badge {
+    display: inline-block;
+    color: #8b6b2e;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    position: relative;
+    font-weight: 600;
+}
+
+.history-badge::before,
+.history-badge::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 90px;
+    height: 1px;
+    background: rgba(212, 175, 55, 0.55);
+}
+
+.history-badge::before {
+    right: 100%;
+    margin-right: 18px;
+}
+
+.history-badge::after {
+    left: 100%;
+    margin-left: 18px;
+}
+
+.history-header h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.2;
+    color: #183247;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 90px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 28px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(243, 201, 98, 0.95), rgba(243, 201, 98, 0.15));
+    box-shadow: 0 0 18px rgba(243, 201, 98, 0.18);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 42px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -74px;
+    top: 34px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff6d6;
+    border: 4px solid #d4af37;
+    box-shadow:
+        0 0 0 8px rgba(212, 175, 55, 0.10),
+        0 0 20px rgba(212, 175, 55, 0.18);
+    z-index: 2;
+}
+
+.timeline-card {
+    position: relative;
+    padding: 30px 28px;
+    border-radius: 24px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 12px 28px rgba(24, 50, 71, 0.08);
+}
+
+.timeline-card::before {
+    content: "";
+    position: absolute;
+    left: -58px;
+    top: 38px;
+    width: 58px;
+    height: 2px;
+    background: linear-gradient(to right, #d4af37, rgba(212, 175, 55, 0.2));
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.15);
+}
+
+.timeline-year {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    background: linear-gradient(to bottom, #f3cf68, #c9952a);
+    color: #1a1406;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    box-shadow:
+        inset 0 2px 6px rgba(255, 255, 255, 0.25),
+        0 8px 18px rgba(212, 175, 55, 0.16);
+}
+
+.timeline-card h3 {
+    font-size: 1.7rem;
+    color: #8b6b2e;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.timeline-card p {
+    color: #4f6475;
+    font-size: 1rem;
+    line-height: 1.9;
+    max-width: 100%;
+}
+
+/* ===== Vision ===== */
+.vision-section {
+    padding: 110px 20px;
+    background: linear-gradient(to bottom, #f8fbff, #edf4fa);
+}
+
+.vision-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.vision-header {
+    max-width: 760px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.vision-badge {
+    display: inline-block;
+    color: #8b6b2e;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.vision-header h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #183247;
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+.vision-header p {
+    color: #506474;
+    line-height: 1.9;
+    font-size: 1.05rem;
+}
+
+.vision-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.vision-card {
+    padding: 30px 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    box-shadow: 0 10px 25px rgba(24, 50, 71, 0.06);
+    transition: 0.35s ease;
+    min-width: 0;
+}
+
+.vision-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(212, 175, 55, 0.45);
+    background: #ffffff;
+}
+
+.vision-card h3 {
+    color: #8b6b2e;
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.vision-card p {
+    color: #506474;
+    line-height: 1.8;
+    font-size: 0.98rem;
+}
+
+/* ===== Achievements ===== */
+.achievements-section {
+    padding: 110px 20px;
+    background: linear-gradient(to bottom, #f8fbff, #edf4fa);
+}
+
+.achievements-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.achievements-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.achievements-badge {
+    color: #8b6b2e;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.achievements-header h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: #183247;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.achievements-header p {
+    color: #506474;
+    line-height: 1.8;
+}
+
+.achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.achievement-card {
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(24, 50, 71, 0.06);
+    min-width: 0;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+    background: #ffffff;
+}
+
+.achievement-card h3 {
+    color: #8b6b2e;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.achievement-card p {
+    color: #506474;
+    line-height: 1.7;
+}
+
+/* ========================= Responsive ========================= */
+@media (max-width: 430px) {
+
+    .air,
+    .air * {
+        max-width: 100%;
+    }
+
+    .air-hero {
+        height: auto;
+        min-height: 100svh;
+    }
+
+    .air-hero-content {
+        min-height: 100svh;
+        padding: 24px 16px;
+    }
+
+    .air-hero-content h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    .air-hero-content p {
+        font-size: 0.92rem;
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 220px;
+        padding: 11px 18px;
+        font-size: 0.92rem;
+    }
+
+    .air .air-section,
+    .overview-section,
+    .structure-section,
+    .history-section,
+    .vision-section,
+    .achievements-section {
+        padding: 65px 14px;
+    }
+
+    .overview-container,
+    .vision-card,
+    .achievement-card,
+    .air-card,
+    .timeline-card,
+    .structure-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .overview-container {
+        padding: 20px 14px;
+        border-radius: 16px;
+    }
+
+    .overview-header h2,
+    .structure-intro h2,
+    .history-header h2,
+    .vision-header h2,
+    .achievements-header h2,
+    .air-text h2 {
+        font-size: 1.55rem;
+        line-height: 1.25;
+    }
+
+    .overview-text,
+    .air-text p,
+    .structure-intro p,
+    .timeline-card p,
+    .vision-header p,
+    .vision-card p,
+    .achievement-card p,
+    .structure-item p {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+
+    .air-cards,
+    .equipment-grid,
+    .vision-cards,
+    .achievements-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .air-card,
+    .vision-card,
+    .achievement-card {
+        padding: 18px 14px;
+        border-radius: 16px;
+    }
+
+    .structure-layout {
+        padding-left: 28px;
+        gap: 18px;
+    }
+
+    .structure-line {
+        left: 8px;
+    }
+
+    .structure-item {
+        padding: 18px 14px;
+        border-radius: 14px;
+    }
+
+    .structure-item::before {
+        left: -23px;
+        top: 22px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .structure-item h3 {
+        font-size: 1.05rem;
+    }
+
+    .equipment-card {
+        border-radius: 16px;
+    }
+
+    .equipment-image {
+        height: 180px;
+    }
+
+    .equipment-content {
+        padding: 15px 14px;
+    }
+
+    .equipment-content h3 {
+        font-size: 1.05rem;
+        line-height: 1.3;
+    }
+
+    .equipment-content p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .equipment-tag {
+        font-size: 0.76rem;
+        padding: 6px 10px;
+    }
+
+    .history-header {
+        margin-bottom: 35px;
+    }
+
+    .history-badge::before,
+    .history-badge::after {
+        display: none;
+    }
+
+    .timeline {
+        padding-left: 28px;
+    }
+
+    .timeline::before {
+        left: 7px;
+    }
+
+    .timeline-item {
+        margin-bottom: 22px;
+    }
+
+    .timeline-dot {
+        left: -22px;
+        top: 20px;
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
+    }
+
+    .timeline-card {
+        padding: 16px 14px;
+        border-radius: 16px;
+    }
+
+    .timeline-card::before {
+        left: -12px;
+        top: 22px;
+        width: 12px;
+    }
+
+    .timeline-year {
+        font-size: 0.88rem;
+        padding: 7px 12px;
+        margin-bottom: 10px;
+    }
+
+    .timeline-card h3 {
+        font-size: 1.05rem;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .air-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .equipment-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .vision-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+
+    .air .air-section,
+    .overview-section,
+    .structure-section,
+    .history-section,
+    .vision-section,
+    .achievements-section {
+        padding: 85px 18px;
+    }
+
+    .overview-container {
+        padding: 30px 24px;
+    }
+
+    .structure-layout {
+        padding-left: 52px;
+    }
+
+    .structure-line {
+        left: 16px;
+    }
+
+    .structure-item::before {
+        left: -41px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .timeline {
+        padding-left: 58px;
+    }
+
+    .timeline::before {
+        left: 16px;
+    }
+
+    .timeline-dot {
+        left: -44px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .timeline-card::before {
+        left: -34px;
+        width: 34px;
+    }
+
+    .vision-cards,
+    .achievements-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .air-hero,
+    .air-hero-content {
+        min-height: 85vh;
+    }
+
+    .air-hero-content {
+        padding: 24px 16px;
+    }
+
+    .air-hero-content p {
+        max-width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .hero-btn {
+        padding: 11px 22px;
+        font-size: 0.95rem;
+    }
+
+    .air .air-section,
+    .overview-section,
+    .structure-section,
+    .history-section,
+    .vision-section,
+    .achievements-section {
+        padding: 75px 16px;
+    }
+
+    .overview-container {
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+
+    .overview-text {
+        font-size: 0.96rem;
+        line-height: 1.85;
+        padding-left: 16px;
+    }
+
+    .air-cards,
+    .equipment-grid,
+    .vision-cards,
+    .achievements-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .air-card,
+    .vision-card,
+    .achievement-card {
+        padding: 22px 18px;
+        border-radius: 18px;
+    }
+
+    .structure-layout {
+        padding-left: 38px;
+        gap: 22px;
+    }
+
+    .structure-line {
+        left: 10px;
+    }
+
+    .structure-item {
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    .structure-item::before {
+        left: -29px;
+        top: 24px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .structure-item h3 {
+        font-size: 1.15rem;
+    }
+
+    .structure-item p {
+        font-size: 0.93rem;
+    }
+
+    .equipment-card {
+        border-radius: 18px;
+    }
+
+    .equipment-image {
+        height: 220px;
+    }
+
+    .equipment-content {
+        padding: 18px;
+    }
+
+    .equipment-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .equipment-content p {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+
+    .equipment-tag {
+        font-size: 0.8rem;
+        padding: 7px 12px;
+    }
+
+    .history-header {
+        margin-bottom: 45px;
+    }
+
+    .history-badge::before,
+    .history-badge::after {
+        width: 35px;
+    }
+
+    .timeline {
+        padding-left: 40px;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        margin-bottom: 28px;
+    }
+
+    .timeline-dot {
+        left: -30px;
+        width: 14px;
+        height: 14px;
+        top: 22px;
+        border-width: 3px;
+    }
+
+    .timeline-card {
+        padding: 20px 16px;
+        border-radius: 18px;
+    }
+
+    .timeline-card::before {
+        left: -18px;
+        width: 18px;
+        top: 24px;
+    }
+
+    .timeline-year {
+        font-size: 0.95rem;
+        padding: 8px 14px;
+        margin-bottom: 12px;
+    }
+
+    .timeline-card h3 {
+        font-size: 1.18rem;
+        margin-bottom: 10px;
+    }
+
+    .timeline-card p {
+        font-size: 0.93rem;
+        line-height: 1.75;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .air-hero,
+    .air-hero-content {
+        min-height: 78vh;
+    }
+
+    .air-hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .air .air-section,
+    .overview-section,
+    .structure-section,
+    .history-section,
+    .vision-section,
+    .achievements-section {
+        padding: 65px 14px;
+    }
+
+    .section-badge,
+    .structure-badge,
+    .history-badge,
+    .vision-badge,
+    .achievements-badge {
+        font-size: 0.78rem;
+    }
+
+    .overview-container,
+    .structure-item,
+    .air-card,
+    .equipment-content,
+    .vision-card,
+    .achievement-card,
+    .timeline-card {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .equipment-image {
+        height: 190px;
+    }
+
+    .history-badge::before,
+    .history-badge::after {
+        display: none;
+    }
+}
+
+/* ================= DARK MODE - AIR FORCE (FINAL CLEAN) ================= */
+
+body.dark .air {
+    background: #121a26;
+}
+
+/* sections */
+body.dark .air .air-section,
+body.dark .air .overview-section,
+body.dark .air .structure-section,
+body.dark .air .history-section,
+body.dark .air .vision-section,
+body.dark .air .achievements-section,
+body.dark .air .content-section {
+    background: linear-gradient(to bottom, #121a26, #162233, #1c2b3f);
+}
+
+/* hero overlay */
+body.dark .air-hero::after {
+    background: rgba(10, 20, 35, 0.65);
+}
+
+/* ================= TEXT ================= */
+
+body.dark .air h1,
+body.dark .air h2,
+body.dark .air h3 {
+    color: #ffffff;
+}
+
+body.dark .air p,
+body.dark .air li,
+body.dark .air span {
+    color: #dbe7f2;
+}
+
+/* ================= BADGES ================= */
+
+body.dark .air .section-badge,
+body.dark .air .structure-badge,
+body.dark .air .history-badge,
+body.dark .air .vision-badge,
+body.dark .air .achievements-badge {
+    color: #7fb3d5;
+    background: rgba(127, 179, 213, 0.12);
+    border: 1px solid rgba(127, 179, 213, 0.22);
+}
+
+/* ================= CARDS ================= */
+
+body.dark .air .overview-container,
+body.dark .air .structure-item,
+body.dark .air .air-card,
+body.dark .air .equipment-card,
+body.dark .air .vision-card,
+body.dark .air .achievement-card,
+body.dark .air .timeline-card,
+body.dark .air .content-text li {
+    background: #1c2b3f;
+    border: 1px solid rgba(95, 168, 211, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* headings inside cards */
+body.dark .air .air-card h3,
+body.dark .air .structure-item h3,
+body.dark .air .timeline-card h3,
+body.dark .air .vision-card h3,
+body.dark .air .achievement-card h3,
+body.dark .air .equipment-content h3 {
+    color: #ffffff;
+}
+
+/* paragraph inside cards */
+body.dark .air .air-card p,
+body.dark .air .structure-item p,
+body.dark .air .timeline-card p,
+body.dark .air .vision-card p,
+body.dark .air .achievement-card p,
+body.dark .air .equipment-content p,
+body.dark .air .content-text p,
+body.dark .air .content-list li {
+    color: #dbe7f2;
+}
+
+/* ================= BUTTON ================= */
+
+body.dark .air .hero-btn {
+    background: linear-gradient(to right, #3f7faa, #5fa8d3);
+    color: #ffffff;
+}
+
+/* ================= TIMELINE ================= */
+
+body.dark .air .timeline::before {
+    background: linear-gradient(to bottom, #5fa8d3, transparent);
+}
+
+body.dark .air .timeline-dot {
+    background: #5fa8d3;
+    border: 3px solid #3f7faa;
+    box-shadow: 0 0 0 6px rgba(95, 168, 211, 0.14);
+}
+
+body.dark .air .timeline-year {
+    background: linear-gradient(to right, #3f7faa, #5fa8d3);
+    color: #ffffff;
+}
+
+/* ================= STRUCTURE ================= */
+
+body.dark .air .structure-line {
+    background: linear-gradient(to bottom, #5fa8d3, transparent);
+}
+
+body.dark .air .structure-item::before {
+    background: #5fa8d3;
+}
+
+/* ================= EQUIPMENT ================= */
+
+body.dark .air .equipment-tag {
+    color: #7fb3d5;
+    border: 1px solid rgba(127, 179, 213, 0.25);
+    background: rgba(127, 179, 213, 0.1);
+}
+
+/* ************************************************************ air page end ********************************************************************** */
+/* ************************************************************ air page start ********************************************************************** */
 
 .air .air-section {
     padding: 100px 20px;
